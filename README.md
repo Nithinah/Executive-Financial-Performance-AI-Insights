@@ -1,27 +1,26 @@
-# 📊 Financial Analysis Dashboard - Power BI
+Enterprise Financial Analytics & AI Architecture
+## Project Overview
+This project demonstrates an enterprise-grade Business Intelligence (BI) solution designed to automate financial reporting and root-cause analysis. Built entirely in Power BI, this dashboard processes raw corporate accounting data into a dynamic Profit & Loss (P&L) statement while integrating native Machine Learning (ML) features to provide executives with immediate, actionable insights.
 
+## Architecture & Data Modeling
+Unlike flat-file reporting, this project relies on a robust data architecture mirroring global corporate ERP systems.
 
-# Overview
-This Financial Analysis Dashboard provides an in-depth visualization of key financial metrics, enabling businesses to track their performance over multiple years. Developed using Power BI, the dashboard offers insights into sales revenue, gross profit, net profit, operating income, and financial margins.
+Star Schema Design: The backend is architected using a central Fact Table (General Ledger) connected via 1-to-Many relationships to structural Dimension Tables (Chart of Accounts, Calendar, Territory).
 
-# Features
-🔹 Sales & Revenue Analysis - Track revenue trends over 2018-2020.
-🔹 Profitability Metrics - Evaluate gross profit, net profit, and EBITDA.
-🔹 Expense Breakdown - Analyze marketing, sales, administration, and taxation costs.
-🔹 Operating vs Non-Operating Income - Identify interest income, asset gains/losses, and exchange variations.
-🔹 Dynamic Filtering - Filter reports by year and country for customized insights.
-🔹 Interactive Visuals - Graphs, tables, and charts for quick decision-making.
+Advanced DAX Logic: Implemented custom Data Analysis Expressions (DAX) to dynamically calculate critical KPIs, including Total Revenue, Gross Profit, Operating Profit, and Net Profit, ensuring accurate aggregations across complex accounting hierarchies.
 
-# Key Financial Insights
-📌 Gross Profit Margin - Increased from 66.66% (2018) to 69.65% (2019) before slight drop to 68.17% (2020).
-📌 Net Profit Margin - Peaked at 22.87% in 2019, later declining to 16.46% in 2020.
-📌 Revenue Growth - Sales revenue jumped from ₹35.7M in 2018 to ₹78.3M in 2020.
-📌 Operating Profit Trend - Significant rise from ₹7.4M to ₹15.2M over three years.
+Hierarchical P&L Matrix: Engineered a drill-down matrix that filters out balance sheet noise to accurately reflect operating revenues and expenses across multiple fiscal years.
 
-# Tools & Technologies
-✅ Power BI Desktop - Interactive dashboard creation
-✅ Data Modeling - Structured financial datasets
-✅ DAX & Power Query - Data transformation & calculations
-✅ Excel/CSV Data Integration - Importing and cleaning financial data
+## AI Integration & Advanced Analytics
+To bridge the gap between static reporting and proactive intelligence, this dashboard leverages embedded ML algorithms:
 
-![image](https://github.com/user-attachments/assets/f65ce7f2-f5eb-4d1c-8106-ff89f8e16a17)
+Key Influencers (Machine Learning): Integrated Microsoft's classification and regression models to automatically conduct root-cause analysis. The AI identifies and ranks the specific geographic regions and financial sub-classes that drive revenue increases or decreases.
+
+Time-Series Anomaly Detection: Applied automated anomaly detection to revenue trend lines, allowing the system to instantly flag irregular financial entries or unexpected market shifts without manual auditing.
+
+## Phase 2: Future Scope (LLM & RAG Integration)
+While this Power BI dashboard provides structured visual insights, the ultimate goal of this architecture is to serve as the foundational data layer for a multimodal AI financial agent.
+
+Vector Search & FAISS Indexing: The structured outputs of this General Ledger model can be extracted, embedded, and stored using FAISS indexing for efficient similarity matching.
+
+Retrieval-Augmented Generation (RAG): By layering a multilingual LLM over this indexed financial data, C-suite executives will be able to bypass dashboards entirely, querying complex financial metrics and P&L drivers using natural language conversational agents.
