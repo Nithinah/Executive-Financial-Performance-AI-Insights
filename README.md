@@ -1,4 +1,5 @@
-Enterprise Financial Analytics & AI Architecture
+## Enterprise Financial Analytics & AI Architecture
+
 ## Project Overview
 This project demonstrates an enterprise-grade Business Intelligence (BI) solution designed to automate financial reporting and root-cause analysis. Built entirely in Power BI, this dashboard processes raw corporate accounting data into a dynamic Profit & Loss (P&L) statement while integrating native Machine Learning (ML) features to provide executives with immediate, actionable insights.
 
