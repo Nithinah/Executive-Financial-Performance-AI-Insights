@@ -25,3 +25,9 @@ While this Power BI dashboard provides structured visual insights, the ultimate 
 Vector Search & FAISS Indexing: The structured outputs of this General Ledger model can be extracted, embedded, and stored using FAISS indexing for efficient similarity matching.
 
 Retrieval-Augmented Generation (RAG): By layering a multilingual LLM over this indexed financial data, C-suite executives will be able to bypass dashboards entirely, querying complex financial metrics and P&L drivers using natural language conversational agents.
+
+<img width="1262" height="709" alt="image" src="https://github.com/user-attachments/assets/fd2d041a-a16b-44a4-9357-644fcf751156" />
+
+## Model View
+<img width="1591" height="699" alt="image" src="https://github.com/user-attachments/assets/04a1a38a-583f-4b46-aaff-aa668fd6cb28" />
+
